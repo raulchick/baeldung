@@ -1,4 +1,4 @@
-package com.baeldung.java.core;
+package com.baeldung.java.core.io;
 
 import java.io.*;
 import java.util.Scanner;
