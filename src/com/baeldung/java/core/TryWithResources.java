@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class TryWithResources {
     public static void main(String[] args) {
         createTestData();
+
         //Reading from the file using try without resources
         Scanner scanner = null;
         try {
@@ -21,7 +22,8 @@ public class TryWithResources {
                 scanner.close();
             }
         }
-        //Reading from the file using try without resources
+
+        //Reading from the file using try with resources
         try (Scanner sc = new Scanner(new File("test.txt"))) {
             System.out.println("Reading from the file using \"try with resources\": ");
             while (sc.hasNext()) {
